@@ -68,7 +68,6 @@ x();
 ---
 
 #### Exercise 4: currencyConverter(currency, amount)
-  - Create a javascript file called `dice.js`.
   - Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 
   - Use the if-then-else construct available in Javascript.
 **Hint :**
