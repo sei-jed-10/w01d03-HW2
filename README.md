@@ -11,23 +11,30 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: String Length
+Description: The length property returns the length of a string.
+
+Example using it: 
+var txt = "Mohammed Alghamdi";
+var sln = txt.length;
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: Finding a String in a String
+Description: The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.
 Example using it:
+var str = "Hellow, Welcome to GA";
+var pos = str.indexOf("GA");
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: Searching for a String in a String
+Description: The search() method searches a string for a specified value and returns the position of the match:
 Example using it:
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
 
 ```
 ---
@@ -53,8 +60,10 @@ x();
 ```
 1. anywhere in the script! 
 2. anywhere inside the function `x()` 
-3. anywhere inside the function `y()` 
+3. anywhere inside the function `y()`   ***
 4. anywhere inside the function `z()`
+
+Answer is:  anywhere inside the function `y()`
 
 ### Choose the correct answer
 
@@ -65,6 +74,20 @@ x();
 - Example: `rollDice() // Dice rolled are 6 and 1.  Sum is 7`
 - BONUS: have your function take an argument of the # of dice to be rolled.
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
+
+Answer:
+
+function x (){
+  var num1 = Math.floor(Math.random()*6)+1;
+  var num2 = Math.floor(Math.random()*6)+1;
+  var result = num1 + num2;
+  return "Dice rolled are " + num1 + " and " + num2 + ". Sum is " + result;
+}
+
+
+console.log(x());
+
+
 ---
 
 #### Exercise 4: currencyConverter(currency, amount)
@@ -73,6 +96,25 @@ x();
 **Hint :**
 > - 1 Riyal = 4.68 Egyptian pound 
 > - 1 Riyal = 0.10 Bahraini dinar
+
+
+Answer:
+
+function currencyConverter (amount,currency){
+  if (currency == "USD"){
+    let convertedVersion = amount * 0.266667;
+    return convertedVersion;
+  }else if (currency == "EGP"){
+    let convertedVersion = amount * 4.29319;
+    return convertedVersion;
+  }else if (currency == "GBP"){
+    let convertedVersion = amount * 0.206290;
+    return convertedVersion;
+  }else if (currency == "BD"){
+    let convertedVersion = amount * 0.100267;
+    return convertedVersion;
+  }
+}
 ---
 
 ### BONUS 5,6
