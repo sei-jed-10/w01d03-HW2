@@ -94,14 +94,15 @@ function isCharacterAVowel(x){
     if (typeof x !== 'string'){
       return "please enter a charecter";
     }
+    x = x.toLowerCase();
     if(x.length > 1 ){
-      return "please enter a charecter";
+      return "please enter ONE charecter";
     }else if (x =='a' || x =='e' || x =='i' || x =='o' || x =='u'){
       return true;
     }
     else return false
   };
-isCharacterAVowel('a');
+isCharacterAVowel('g');
 
 
 
