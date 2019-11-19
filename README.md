@@ -11,23 +11,23 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: concat
+Description: adds strings togther
+Example using it: "Mo".concat("hammed")
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name: substr
+Description: returns a sub string from the given index and length
+Example using it: "Mohammed".substr(0,2) => "Mo"
 ```
 
 Method 3
 ```
-Name:
-Description:
-Example using it:
+Name: substring
+Description: returns a sub string from given start index to given end index but not included
+Example using it: "Mohammed".substring(0,2) => "Mo"
 
 ```
 ---
@@ -51,12 +51,12 @@ function x() {
 
 x();
 ```
-1. anywhere in the script! 
-2. anywhere inside the function `x()` 
-3. anywhere inside the function `y()` 
-4. anywhere inside the function `z()`
+1. anywhere in the script! nope!
+2. anywhere inside the function `x()` NO!
+3. anywhere inside the function `y()` Yes!
+4. anywhere inside the function `z()` In here too!
 
-### Choose the correct answer
+### Choose the correct answer 3,4
 
 ---
 
@@ -65,6 +65,17 @@ x();
 - Example: `rollDice() // Dice rolled are 6 and 1.  Sum is 7`
 - BONUS: have your function take an argument of the # of dice to be rolled.
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
+
+```js
+rollDice = (n=2) => {
+  let dice = 0
+  if (n < 2) n = 2
+  for(let i = 0; i < n; i++){
+    dice += Math.floor(Math.random() * 6) + 1
+  }
+  return dice
+}
+```
 ---
 
 #### Exercise 4: currencyConverter(currency, amount)
@@ -73,14 +84,37 @@ x();
 **Hint :**
 > - 1 Riyal = 4.68 Egyptian pound 
 > - 1 Riyal = 0.10 Bahraini dinar
+```js
+currencyConverter = (amount, currency) => {
+  if(currency == "USD") return amount * 3.75
+  else if (currency == "EGP") return amount * 4.68
+  else if (currency == "BD") return amount * 0.10
+}
+```
 ---
 
 ### BONUS 5,6
 #### Exercise 5: isCharacterAVowel(character)
   - Write a function `isCharacterAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel and false, otherwise.
+```js
+isCharacterAVowel = (c) => {
+  let isVowel = false
+  if(c.length == 1){
+    const cUpper= c.toUpperCase()
+    if(cUpper == 'A' || cUpper == 'E' || cUpper == 'I' || cUpper == 'O' || cUpper == 'U') isVowel = true
+  }
+  return isVowel
+}
+```
 ---
 #### Exercise 6: pow(base, exponent)
   - Define a function `pow` that replicates the [Math.pow()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow) method in JavaScript's Math object.
+
+```js
+pow = (base, exponent) => {
+  return base ** exponent
+}
+```
 
 ---
 ### Deliverable  
