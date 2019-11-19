@@ -11,23 +11,33 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name:
-Description:
+Name: length
+Description: a method that returns the length of a given string.
 Example using it:
+var greeting="Hello"
+var strLength=greeting.length;
+console.log(strLength);
 ```
 
 Method 2
 ```
-Name:
-Description:
+Name: search()
+Description: a method that searches a given string for a particular value and returns the index of where the match is found
 Example using it:
+var message="Welcome to Java Script"
+var javaIndex=message.search("Java");
+console.log(javaIndex);
+
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name: replace()
+Description: a method that replaces a specific value with another given one, in a string
 Example using it:
+var welcomeMessage="Welcome to HTML"
+welcomeMessage=welcomeMessage.replace("HTML","Java Script");
+console.log(welcomeMessage);
 
 ```
 ---
@@ -57,6 +67,7 @@ x();
 4. anywhere inside the function `z()`
 
 ### Choose the correct answer
+anywhere inside the function `z()`
 
 ---
 
