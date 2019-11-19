@@ -1,4 +1,4 @@
-# JS Functions Week1 Homework2
+  # JS Functions Week1 Homework2
 
 ## Instructions
 1. Fork and clone this repository.
@@ -11,25 +11,33 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name:
-Description:
-Example using it:
+Name: String Length 
+Description: the length property returns the length of a string
+Example using it: 
+var txt = "razansannan";
+var sln = txt.length;
+console.log(sln)
 ```
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:The charAt() Method
+Description:The charAt() method returns the character at a specified index (position) in a string
+Example using it: var str = "Razan";
+str.charAt(0);            // returns R
 ```
 
 Method 3
 ```
-Name:
-Description:
+Name:Converting to Upper and Lower Case
+Description:A string is converted to upper case with toUpperCase()
+A string is converted to lower case with toLowerCase()
 Example using it:
-
+var text1 = "Razan!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
 ```
+ar text1 = "Razan!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
 ---
 
 #### Exercise 2:
@@ -57,7 +65,7 @@ x();
 4. anywhere inside the function `z()`
 
 ### Choose the correct answer
-
+anywhere inside the function `y()` 
 ---
 
 #### Exercise 3: Dice Roller
@@ -66,6 +74,16 @@ x();
 - BONUS: have your function take an argument of the # of dice to be rolled.
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
 ---
+function myFunction() {
+
+  var d1 = Math.floor((Math.random() * 6) + 1);
+  var d2 = Math.floor((Math.random() * 6) + 1);
+  var total = d1 + d2;
+ return " Dice rolled are " + d1 + " and " + d2 + ".Sum is " + total;
+}
+
+console.log(myFunction( ));
+
 
 #### Exercise 4: currencyConverter(currency, amount)
   - Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 
@@ -75,10 +93,42 @@ x();
 > - 1 Riyal = 0.10 Bahraini dinar
 ---
 
+function currencyConverter (amount,currency){
+  
+  if (currency == "USD"){
+    var  convertedVersion = amount * 0.266667;
+    return convertedVersion;
+
+  }else if (currency == "EGP"){
+    var convertedVersion = amount * 4.29319;
+    return convertedVersion;
+
+  }else if (currency == "GBP"){
+    var convertedVersion = amount * 0.206290;
+    return convertedVersion;
+
+  }else  (currency == "BD"){
+    var convertedVersion = amount * 0.100267;
+    return convertedVersion;
+  }
+}
 ### BONUS 5,6
 #### Exercise 5: isCharacterAVowel(character)
   - Write a function `isCharacterAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel and false, otherwise.
 ---
+var findVowel = function(letter) {
+var vowels = ["a", "e", "i", "o", "u"];
+for(var i in vowels){
+    if(letter === i){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+};
+console.log(findVowel("i"));
+
 #### Exercise 6: pow(base, exponent)
   - Define a function `pow` that replicates the [Math.pow()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow) method in JavaScript's Math object.
 
