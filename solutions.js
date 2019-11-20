@@ -91,6 +91,22 @@ if (currency == 'USD'){
 
 }
 currencyConverter(300,'USD');
+///////////////////
+Exercise 5
+Bonus
+
+function isCharacterAVowel( character ){
+     if ((character === "a") || (character === "e") || (character === "u") || (character === "i") || (character === "o")){
+         return true;
+     } else {
+         return false;
+     }
+ }
+ console.log(isCharacterAVowel("a"));
+ ////////////////////
+
+ End of the file
+
 
 
 
