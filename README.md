@@ -11,28 +11,62 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
+//
 Name:
+The slice() Method
 Description:
+The splice() method changes the original array and slice() method doesn't change the original array.
 Example using it:
+
+//
+var str = ' I went shopping with mom .';
+
+console.log(str.slice(31));
+expected output: "I."
+
+console.log(str.slice(4, 19));
+expected output: "went."
+
+console.log(str.slice(-4));
+expected output: "shopping."
+
+console.log(str.slice(-9, -5));
+ expected output: "withmom."
 ```
 
 Method 2
+//
 ```
 Name:
+String substring() Method
 Description:
+extracts the characters from a string, between two specified indices, and returns the new sub string.
 Example using it:
+//
+var str = "Hello world!";
+var res = str.substring(1, 4);
 ```
 
 Method 3
+//
 ```
 Name:
+The substr() Method
 Description:
+extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters
 Example using it:
+var str = 'Mozilla';
+
+console.log(str.substr(1, 2));
+// expected output: "oz"
+
+console.log(str.substr(2));
+// expected output: "zilla"
 
 ```
 ---
 
-#### Exercise 2:
+#### Exercise 2: 
 Where can you print out the value of variable c without resulting in an error?
 
 ```js
@@ -56,6 +90,9 @@ x();
 3. anywhere inside the function `y()` 
 4. anywhere inside the function `z()`
 
+//
+inside the function `y()` 
+
 ### Choose the correct answer
 
 ---
@@ -66,6 +103,15 @@ x();
 - BONUS: have your function take an argument of the # of dice to be rolled.
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
 ---
+//
+var d1 = Math.floor((Math.random() * 6) + 1);
+   var d2 = Math.floor((Math.random() * 6) + 1);
+   var total = d1 + d2;
+  return " Dice rolled are " + d1 + " and " + d2 + ".Sum is " + total;
+ }
+
+ console.log(myFunction( ));
+
 
 #### Exercise 4: currencyConverter(currency, amount)
   - Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 
@@ -74,6 +120,26 @@ x();
 > - 1 Riyal = 4.68 Egyptian pound 
 > - 1 Riyal = 0.10 Bahraini dinar
 ---
+//
+function currencyConverter (amount,currency){
+
+   if (currency == "USD"){
+     var  convertedVersion = amount * 0.266667;
+     return convertedVersion;
+
+   }else if (currency == "EGP"){
+     var convertedVersion = amount * 4.29319;
+     return convertedVersion;
+
+   }else if (currency == "GBP"){
+     var convertedVersion = amount * 0.206290;
+     return convertedVersion;
+
+   }else  (currency == "BD"){
+     var convertedVersion = amount * 0.100267;
+     return convertedVersion;
+   }
+ }
 
 ### BONUS 5,6
 #### Exercise 5: isCharacterAVowel(character)
