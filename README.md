@@ -14,7 +14,9 @@ Method 1
 Name:
 Description:
 Example using it:
-```
+```js
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
 
 Method 2
 ```
