@@ -3,7 +3,7 @@
 ## Instructions
 1. Fork and clone this repository.
 2. Change into the new directory`cd w01d03-HW2`
-3. Create a file called solution.js and add all answers to it. 
+3. Create a file called ls and add all answers to it. 
 ---
 
 #### Exercise 1:
