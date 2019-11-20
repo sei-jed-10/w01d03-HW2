@@ -52,7 +52,7 @@ function x() {
 x();
 ```
 1. anywhere in the script! 
-2. anywhere inside the function `x()` 
+2. anywhere inside the function `x()`  inside function 
 3. anywhere inside the function `y()` 
 4. anywhere inside the function `z()`
 
@@ -65,7 +65,7 @@ x();
 - Example: `rollDice() // Dice rolled are 6 and 1.  Sum is 7`
 - BONUS: have your function take an argument of the # of dice to be rolled.
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
----
+---   
 
 #### Exercise 4: currencyConverter(currency, amount)
   - Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 

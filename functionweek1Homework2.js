@@ -49,14 +49,30 @@ x();
 
 
 //- Write a function that chooses two random numbers (1-6) and returns them. It should also return the sum.
-function rollDice(num, num1){  
- var sum =num+num1;
- var randomvalu=Math.floor(Math.random() *num)+num1; 
-   return  [randomvalu , sum];
+function rollDice(){  
 
-}
-console.log(rollDice(6, 1))
 
+    var randomvalu1=Math.floor(Math.random() *6)+1; 
+   
+   if(randomvalu1!=7 ){    
+    
+    var randomvalu2=Math.floor(Math.random() *6)+1;  }
+      
+   
+   
+      return  [randomvalu1 ,randomvalu2,randomvalu2+ randomvalu1  ];
+   
+   
+   
+   
+
+   
+   
+   }
+   
+   
+   
+   console.log(rollDice())
 /*Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 
 - Use the if-then-else construct available in Javascript.
 **Hint :**
@@ -69,15 +85,17 @@ function currencyConverter(  amount, currency ){
     }
 
    else if("GBP"==currency){   
-        return  amount*4.85 ;
+        return  amount*4.84;
     }
   else  if("EGP"==currency){   
-        return  amount*4.86 ;
+        return  amount/4.86 ;
     }
     else  if("BD"==currency){   
-        return amount*0.10;
+        return amount/0.10;
     }  
- console.log(currencyConverter( 1,"USD")  );
+  
 
 
 }
+console.log(currencyConverter( 10,"EGP")  );
+ 
