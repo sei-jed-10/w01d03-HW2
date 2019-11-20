@@ -11,25 +11,50 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name:
-Description:
+Name: slice
+Description: slice() extracts a part of a string and returns the extracted part in a new string.
 Example using it:
+
+var str = "Good morning";
+
+var res = str.slice(7,13);
+
+console.log(res);
+
 ```
+
 
 Method 2
 ```
-Name:
-Description:
-Example using it:
+Name:substring
+Description: substring() is similar to slice().the difference is that substring() cannot accept negative indexes.
+
+Example using it: var str = "Good morning";
+var res = str.substring(7,13);
+
+console.log(res);
+
+
+
+
+
 ```
+
 
 Method 3
 ```
-Name:
-Description:
+Name:substr
+Description:substr() is similar to slice().the difference is that the second parameter specifies the length of the extracted part.
 Example using it:
 
+var str = "Good morning";
+var res = str.substr(7,6);
+
+console.log(res);
+
+
 ```
+
 ---
 
 #### Exercise 2:
@@ -67,12 +92,23 @@ x();
 - Example: `rollDice(3) // Dice rolled are 4, 2, and 7.  Sum is 13.`
 ---
 
+function rollDice(){
+  
+let num1= Math.floor(Math.random() *6) +1;
+let num2= Math.floor(Math.random() *6) +1;
+  
+console.log("The first random num is "+num1+",  the second random num is"+num2+","the sum is"(num1+num2));
+}
+
+rollDice();
+
+
+
+
+
+
 #### Exercise 4: currencyConverter(currency, amount)
-  - Write a function `currencyConverter` that takes two arguments an amount and a currency (USD, GBP, EGP, BD) and returns  the converted version of the amount in Riyals. 
-  - Use the if-then-else construct available in Javascript.
-**Hint :**
-> - 1 Riyal = 4.68 Egyptian pound 
-> - 1 Riyal = 0.10 Bahraini dinar
+
 ---
 
 ### BONUS 5,6
