@@ -47,29 +47,25 @@ console.log(random);
 
 //Exercise 4: currencyConverter(currency, amount)
 
-var rates = [4.68, 0.10];// exchange value in an array
-
-var EgyptianPound = rates[0];
-var BahrainiDinar = rates[1];
-
-var result = 0;
-
-function convert(amount, convertFrom, convertTo) {
-      if (convertFrom == "EGP && convertTo == "BAR") {
-          result = amount * EgyptianPound;
-        }
-       else if (convertFrom == "BAR" && convertTo == "EGP") {
-          result = amount * BahrainiDinar;
-} 
-   else if (convertFrom === convertTo) {
-         
-} else {
-    alert("invalid input");
-}
-}
-       document.writer(amount+ " " + convertFrom + " " + result + " " + convertTo + "<br>" );      
-       
-{
-    convert(100,"EGP","BAR");
-    convert(100,"BAR","EGP");
-}
+function currencyConverter(currency, amount) {
+    let USD = 3.75;
+    let GBP = 4.61;
+    let EGP = 0.23;
+    let BD = 9.95;
+    let converted;
+    if (currency == "USD") {
+      return (converted = amount * USD);
+    } else if (currency == "GBP") {
+      return (converted = amount * GBP);
+    } else if (currency == "EGP") {
+      return (converted = amount * EGP);
+    } else if (currency == "BD") {
+      return (converted = amount * BD);
+    } else {
+      console.log("Please enter a valid currency");
+    }
+  }
+   console.log(currencyConverter("USD", 10) + " SR");
+   console.log(currencyConverter("GBP", 10) + " SR");
+   console.log(currencyConverter("EGP", 10) + " SR");
+   console.log(currencyConverter("BD", 10) + " SR");
