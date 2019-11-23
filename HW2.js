@@ -21,18 +21,37 @@ var a = " hey! let's go to the movies"
    console.log(b)
 
 ///// E: 2 //////
-// anywhere inside function y
+// anywhere inside function z
 
-///// E: 3 /////      I could nt find the solution :((( I ll work more on it on weekend
+// ///// E: 3 /////   
+var num1 = [1, 2, 3, 4, 5, 6]
+var num2 = [1, 2, 3, 4, 5, 6]
 function rollDice(num1, num2) {
-    // var num1 =
-    // var num2 =
-    // var sum = num1 + num2
-       returns(rollDice.Math.floor(Math.random(num1 + num2)))
-   }
-  
-   rollDice(1, 6)
+    var num1 = Math.floor((Math.random()*6)+1);
+    var num2 = Math.floor((Math.random()*6)+1);
+    var sum = num1 + num2
+      return("Dice rolled are " + num1 + " and " + num2 + ". Sum is " + sum)
+  }
+ 
+  console.log(rollDice())
 
-////// E: 4 ////////   I am sorry i did nt solve this as time is up and I have to push this before 8 am 
-function currencyConverter(sr, le)
-  if 
+////// E: 4 ////////   
+function currencyConverter(amount, currency){
+  if (currency == "USD"){
+   console.log(amount + " US dollars "+ "= " + amount * 3.7 + " Riyals")
+  }
+  if (currency == "EGP"){
+   console.log(amount + " Egyptian pound "+ "= " + amount / 4.68 + " Riyals")
+  }
+  if (currency == "GBP"){
+   console.log(amount + " Pound "+ "= " + amount * 4.8 + " Riyals")
+  }
+  if (currency == "BD"){
+   console.log(amount + " Bahrini dinar "+ "= " + amount / 0.10 + " Riyals")
+  }
+}
+
+currencyConverter(1, "USD")
+currencyConverter(1, "EGP")
+currencyConverter(1, "GBP")
+currencyConverter(1, "BD")

@@ -73,6 +73,8 @@ x();
 **Hint :**
 > - 1 Riyal = 4.68 Egyptian pound 
 > - 1 Riyal = 0.10 Bahraini dinar
+
+
 ---
 
 ### BONUS 5,6
