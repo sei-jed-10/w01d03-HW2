@@ -11,46 +11,31 @@ Research 3 string methods and describe what they are used for and how to use the
 
 Method 1
 ```
-Name: slice
-Description: slice() extracts a part of a string and returns the extracted part in a new string.
+Name: String Length
+Description: The length property returns the length of a string.
 Example using it:
-
-var str = "Good morning";
-
-var res = str.slice(7,13);
-
-console.log(res);
-
+vvar txt = “Coding if Fun!“;
+var sln = txt.length;
+console.log(sln);
 ```
-
-
 Method 2
 ```
-Name:substring
-Description: substring() is similar to slice().the difference is that substring() cannot accept negative indexes.
-
-Example using it: var str = "Good morning";
-var res = str.substring(7,13);
-
-console.log(res);
-
-
-
-
-
+Name: The indexOf() method
+Description: The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.
+Example using it:
+var str = “Enjoying this course so far, Thank you :)“;
+var pos = str.indexOf(“course”);
+console.log(pos);
 ```
-
-
 Method 3
 ```
-Name:substr
-Description:substr() is similar to slice().the difference is that the second parameter specifies the length of the extracted part.
+Name: The slice() Method
+Description: slice() extracts a part of a string and returns the extracted part in a new string.
 Example using it:
-
-var str = "Good morning";
-var res = str.substr(7,6);
-
+var str = “Have a lovely day!“;
+var res = str.slice(7, 13);
 console.log(res);
+
 
 
 ```
@@ -83,6 +68,9 @@ x();
 
 ### Choose the correct answer
 
+It prints out the value of variable c “3.anywhere inside the function `y()`”
+
+
 ---
 
 #### Exercise 3: Dice Roller
@@ -97,7 +85,7 @@ function rollDice(){
 let num1= Math.floor(Math.random() *6) +1;
 let num2= Math.floor(Math.random() *6) +1;
   
-console.log("The first random num is "+num1+",  the second random num is"+num2+","the sum is"(num1+num2));
+console.log("The first random num is "+num1+",  the second random num is"+num2+",the sum is " + (num1+num2));
 }
 
 rollDice();
@@ -106,8 +94,26 @@ rollDice();
 
 
 
-
 #### Exercise 4: currencyConverter(currency, amount)
+
+ function currencyConverter(amount, currency){
+    let calculate;
+      if(currency === "USD"){
+         calculate = amount * 3.75;
+      }else if(currency === "GBP"){
+        calculate = amount * 4.85;
+      }else if(currency === "EGP"){
+        calculate = amount * 0.23;
+      }else if(currency === "BD"){
+        calculate = amount * 9.95;
+      }
+      console.log(calculate + "Riyals");
+    }
+    currencyConverter(4, "USD");
+    currencyConverter(4, "GBP");
+    currencyConverter(4, "EGP");
+    currencyConverter(4, "BD");
+   
 
 ---
 
