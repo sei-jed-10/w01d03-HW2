@@ -1,5 +1,6 @@
 # JS Functions Week1 Homework2
 
+
 #### Exercise 1:
 Research 3 string methods and describe what they are used for and how to use them.  You can find string methods here https://www.w3schools.com/js/js_string_methods.asp
 
