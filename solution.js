@@ -81,6 +81,17 @@ var dice = {
     var randomNumber = Math.floor(Math.random() * this.sides) + 1;
     return randomNumber;
   }
+  ________
+
+
+
+  const diceRolling = function () {
+let diceA = Math.floor(Math.random()*6)+1;
+let diceB = Math.floor(Math.random()*6)+1;
+let result = diceA + diceB;
+console.log("Dice rolled are " + diceA + " and " + diceB + ". Sum is " + result+".");
+  }
+
 
 ---
 
@@ -90,6 +101,39 @@ var dice = {
 **Hint :**
 > - 1 Riyal = 4.68 Egyptian pound 
 > - 1 Riyal = 0.10 Bahraini dinar
+
+
+
+function currencyConverter(currency, amount) {
+let USD_ER = 3.75;
+let GBP_ER = 4.7;
+let EGP_ER = 0.25;
+let BD_ER = 10;
+let converted;
+if (currency == "USD") {
+return (converted = amount * USD_ER);
+} 
+else if (currency == "GBP") 
+{
+return (converted = amount * GBP_ER);
+} 
+else if (currency == "EGP")
+{
+return (converted = amount * EGP_ER);
+} 
+else if (currency == "BD") {
+return (converted = amount * BD_ER);
+} 
+else 
+{
+console.log("Please enter a valid currency");
+}
+}
+  
+  console.log(currencyConverter("USD", 100) + " SR");
+  console.log(currencyConverter("GBP", 100) + " SR");
+  console.log(currencyConverter("EGP", 100) + " SR");
+  console.log(currencyConverter("BD", 100) + " SR");
 
 
 
